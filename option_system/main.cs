@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SQLite;
 using utils.debug;
+using option_system.option_windows;
 namespace option_system
 {
     public partial class main : Form
@@ -96,6 +97,33 @@ namespace option_system
                  this.LED1.Image = Properties.Resources.red;
                  this.LED1.Image.Tag = "off";
             }     
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            opw4 Form = new opw4();
+            Form.Location = NewPos();
+            Form.ShowDialog();
+        }
+        public Point NewPos()
+        {
+            int xWidth = SystemInformation.PrimaryMonitorSize.Width;
+            int yHeight = SystemInformation.PrimaryMonitorSize.Height;
+            return new Point(xWidth / 2, yHeight / 2);
+        }
+
+        private void op5_Click(object sender, EventArgs e)
+        {
+            opw5 Form = new opw5();
+            Form.Location = NewPos();
+            Form.ShowDialog();
+        }
+
+        private void op3_Click(object sender, EventArgs e)
+        {
+            opw3 Form = new opw3();
+            Form.Location = NewPos();
+            Form.ShowDialog();
         }
     }
 }

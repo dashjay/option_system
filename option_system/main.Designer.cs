@@ -38,6 +38,7 @@
             this.Label2 = new System.Windows.Forms.Label();
             this.Label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -52,7 +53,11 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.op1 = new System.Windows.Forms.Button();
+            this.op2 = new System.Windows.Forms.Button();
+            this.op3 = new System.Windows.Forms.Button();
+            this.op4 = new System.Windows.Forms.Button();
+            this.op5 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LED4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LED3)).BeginInit();
@@ -221,6 +226,16 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "无线传感器状态";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(510, 88);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox5
             // 
@@ -398,15 +413,58 @@
             this.label8.Size = new System.Drawing.Size(0, 20);
             this.label8.TabIndex = 1;
             // 
-            // button1
+            // op1
             // 
-            this.button1.Location = new System.Drawing.Point(510, 88);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.op1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.op1.Location = new System.Drawing.Point(29, 23);
+            this.op1.Name = "op1";
+            this.op1.Size = new System.Drawing.Size(124, 23);
+            this.op1.TabIndex = 2;
+            this.op1.Text = "电子标签配置";
+            this.op1.UseVisualStyleBackColor = true;
+            // 
+            // op2
+            // 
+            this.op2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.op2.Location = new System.Drawing.Point(159, 23);
+            this.op2.Name = "op2";
+            this.op2.Size = new System.Drawing.Size(124, 23);
+            this.op2.TabIndex = 3;
+            this.op2.Text = "继电器配置";
+            this.op2.UseVisualStyleBackColor = true;
+            // 
+            // op3
+            // 
+            this.op3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.op3.Location = new System.Drawing.Point(289, 23);
+            this.op3.Name = "op3";
+            this.op3.Size = new System.Drawing.Size(124, 23);
+            this.op3.TabIndex = 4;
+            this.op3.Text = "串口服务器配置";
+            this.op3.UseVisualStyleBackColor = true;
+            this.op3.Click += new System.EventHandler(this.op3_Click);
+            // 
+            // op4
+            // 
+            this.op4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.op4.Location = new System.Drawing.Point(419, 23);
+            this.op4.Name = "op4";
+            this.op4.Size = new System.Drawing.Size(124, 23);
+            this.op4.TabIndex = 5;
+            this.op4.Text = "LED屏配置";
+            this.op4.UseVisualStyleBackColor = true;
+            this.op4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // op5
+            // 
+            this.op5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.op5.Location = new System.Drawing.Point(549, 23);
+            this.op5.Name = "op5";
+            this.op5.Size = new System.Drawing.Size(124, 23);
+            this.op5.TabIndex = 6;
+            this.op5.Text = "选项";
+            this.op5.UseVisualStyleBackColor = true;
+            this.op5.Click += new System.EventHandler(this.op5_Click);
             // 
             // main
             // 
@@ -414,6 +472,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1061, 665);
+            this.Controls.Add(this.op5);
+            this.Controls.Add(this.op4);
+            this.Controls.Add(this.op3);
+            this.Controls.Add(this.op2);
+            this.Controls.Add(this.op1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -464,6 +527,11 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button op1;
+        private System.Windows.Forms.Button op2;
+        private System.Windows.Forms.Button op3;
+        private System.Windows.Forms.Button op4;
+        private System.Windows.Forms.Button op5;
     }
 }
 
