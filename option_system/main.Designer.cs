@@ -39,11 +39,11 @@
             this.Label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.LED9 = new System.Windows.Forms.PictureBox();
+            this.LED8 = new System.Windows.Forms.PictureBox();
+            this.LED7 = new System.Windows.Forms.PictureBox();
+            this.LED6 = new System.Windows.Forms.PictureBox();
+            this.LED5 = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -64,11 +64,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.LED2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LED1)).BeginInit();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LED9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LED8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LED7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LED6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LED5)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -105,6 +105,7 @@
             this.LED4.Size = new System.Drawing.Size(38, 38);
             this.LED4.TabIndex = 3;
             this.LED4.TabStop = false;
+            this.LED4.Tag = "4";
             // 
             // LED3
             // 
@@ -122,6 +123,7 @@
             this.LED3.Size = new System.Drawing.Size(38, 38);
             this.LED3.TabIndex = 3;
             this.LED3.TabStop = false;
+            this.LED3.Tag = "3";
             // 
             // LED2
             // 
@@ -139,6 +141,7 @@
             this.LED2.Size = new System.Drawing.Size(38, 38);
             this.LED2.TabIndex = 2;
             this.LED2.TabStop = false;
+            this.LED2.Tag = "2";
             // 
             // LED1
             // 
@@ -156,7 +159,7 @@
             this.LED1.Size = new System.Drawing.Size(38, 38);
             this.LED1.TabIndex = 1;
             this.LED1.TabStop = false;
-            this.LED1.Tag = "off";
+            this.LED1.Tag = "1";
             this.LED1.Click += new System.EventHandler(this.LED1_Click);
             // 
             // Label4
@@ -206,11 +209,11 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.button1);
-            this.groupBox2.Controls.Add(this.pictureBox5);
-            this.groupBox2.Controls.Add(this.pictureBox4);
-            this.groupBox2.Controls.Add(this.pictureBox3);
-            this.groupBox2.Controls.Add(this.pictureBox2);
-            this.groupBox2.Controls.Add(this.pictureBox1);
+            this.groupBox2.Controls.Add(this.LED9);
+            this.groupBox2.Controls.Add(this.LED8);
+            this.groupBox2.Controls.Add(this.LED7);
+            this.groupBox2.Controls.Add(this.LED6);
+            this.groupBox2.Controls.Add(this.LED5);
             this.groupBox2.Controls.Add(this.label13);
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Controls.Add(this.label11);
@@ -237,90 +240,95 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // pictureBox5
+            // LED9
             // 
-            this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.LED9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox5.BackColor = System.Drawing.Color.White;
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.pictureBox5.Enabled = false;
-            this.pictureBox5.Image = global::option_system.Properties.Resources.red;
-            this.pictureBox5.Location = new System.Drawing.Point(178, 270);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(38, 38);
-            this.pictureBox5.TabIndex = 14;
-            this.pictureBox5.TabStop = false;
+            this.LED9.BackColor = System.Drawing.Color.White;
+            this.LED9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LED9.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.LED9.Enabled = false;
+            this.LED9.Image = global::option_system.Properties.Resources.red;
+            this.LED9.Location = new System.Drawing.Point(178, 259);
+            this.LED9.Margin = new System.Windows.Forms.Padding(0);
+            this.LED9.Name = "LED9";
+            this.LED9.Size = new System.Drawing.Size(38, 38);
+            this.LED9.TabIndex = 14;
+            this.LED9.TabStop = false;
+            this.LED9.Tag = "9";
             // 
-            // pictureBox4
+            // LED8
             // 
-            this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.LED8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox4.BackColor = System.Drawing.Color.White;
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.pictureBox4.Enabled = false;
-            this.pictureBox4.Image = global::option_system.Properties.Resources.red;
-            this.pictureBox4.Location = new System.Drawing.Point(178, 202);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(38, 38);
-            this.pictureBox4.TabIndex = 13;
-            this.pictureBox4.TabStop = false;
+            this.LED8.BackColor = System.Drawing.Color.White;
+            this.LED8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LED8.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.LED8.Enabled = false;
+            this.LED8.Image = global::option_system.Properties.Resources.red;
+            this.LED8.Location = new System.Drawing.Point(178, 202);
+            this.LED8.Margin = new System.Windows.Forms.Padding(0);
+            this.LED8.Name = "LED8";
+            this.LED8.Size = new System.Drawing.Size(38, 38);
+            this.LED8.TabIndex = 13;
+            this.LED8.TabStop = false;
+            this.LED8.Tag = "8";
             // 
-            // pictureBox3
+            // LED7
             // 
-            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.LED7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox3.BackColor = System.Drawing.Color.White;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.pictureBox3.Enabled = false;
-            this.pictureBox3.Image = global::option_system.Properties.Resources.red;
-            this.pictureBox3.Location = new System.Drawing.Point(178, 142);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(38, 38);
-            this.pictureBox3.TabIndex = 12;
-            this.pictureBox3.TabStop = false;
+            this.LED7.BackColor = System.Drawing.Color.White;
+            this.LED7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LED7.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.LED7.Enabled = false;
+            this.LED7.Image = global::option_system.Properties.Resources.red;
+            this.LED7.Location = new System.Drawing.Point(178, 142);
+            this.LED7.Margin = new System.Windows.Forms.Padding(0);
+            this.LED7.Name = "LED7";
+            this.LED7.Size = new System.Drawing.Size(38, 38);
+            this.LED7.TabIndex = 12;
+            this.LED7.TabStop = false;
+            this.LED7.Tag = "7";
             // 
-            // pictureBox2
+            // LED6
             // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.LED6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox2.BackColor = System.Drawing.Color.White;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.pictureBox2.Enabled = false;
-            this.pictureBox2.Image = global::option_system.Properties.Resources.red;
-            this.pictureBox2.Location = new System.Drawing.Point(179, 88);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(38, 38);
-            this.pictureBox2.TabIndex = 11;
-            this.pictureBox2.TabStop = false;
+            this.LED6.BackColor = System.Drawing.Color.White;
+            this.LED6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LED6.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.LED6.Enabled = false;
+            this.LED6.Image = global::option_system.Properties.Resources.red;
+            this.LED6.Location = new System.Drawing.Point(179, 88);
+            this.LED6.Margin = new System.Windows.Forms.Padding(0);
+            this.LED6.Name = "LED6";
+            this.LED6.Size = new System.Drawing.Size(38, 38);
+            this.LED6.TabIndex = 11;
+            this.LED6.TabStop = false;
+            this.LED6.Tag = "6";
             // 
-            // pictureBox1
+            // LED5
             // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.LED5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.pictureBox1.Enabled = false;
-            this.pictureBox1.Image = global::option_system.Properties.Resources.red;
-            this.pictureBox1.Location = new System.Drawing.Point(178, 23);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(38, 38);
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
+            this.LED5.BackColor = System.Drawing.Color.White;
+            this.LED5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LED5.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.LED5.Enabled = false;
+            this.LED5.Image = global::option_system.Properties.Resources.red;
+            this.LED5.Location = new System.Drawing.Point(178, 23);
+            this.LED5.Margin = new System.Windows.Forms.Padding(0);
+            this.LED5.Name = "LED5";
+            this.LED5.Size = new System.Drawing.Size(38, 38);
+            this.LED5.TabIndex = 10;
+            this.LED5.TabStop = false;
+            this.LED5.Tag = "5";
             // 
             // label13
             // 
@@ -356,7 +364,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(40, 278);
+            this.label10.Location = new System.Drawing.Point(40, 266);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(127, 20);
             this.label10.TabIndex = 6;
@@ -422,6 +430,7 @@
             this.op1.TabIndex = 2;
             this.op1.Text = "电子标签配置";
             this.op1.UseVisualStyleBackColor = true;
+            this.op1.Click += new System.EventHandler(this.op1_Click);
             // 
             // op2
             // 
@@ -432,6 +441,7 @@
             this.op2.TabIndex = 3;
             this.op2.Text = "继电器配置";
             this.op2.UseVisualStyleBackColor = true;
+            this.op2.Click += new System.EventHandler(this.op2_Click);
             // 
             // op3
             // 
@@ -491,11 +501,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.LED1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LED9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LED8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LED7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LED6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LED5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -515,17 +525,17 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox LED8;
+        private System.Windows.Forms.PictureBox LED7;
+        private System.Windows.Forms.PictureBox LED6;
+        private System.Windows.Forms.PictureBox LED5;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox LED9;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button op1;
         private System.Windows.Forms.Button op2;

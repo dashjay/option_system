@@ -87,6 +87,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "opw2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "继电器配置";
             this.ResumeLayout(false);
             this.PerformLayout();
