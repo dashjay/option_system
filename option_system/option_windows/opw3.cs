@@ -21,5 +21,10 @@ namespace option_system.option_windows
             }
             base.WndProc(ref m);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close(); 
+        }
     }
 }

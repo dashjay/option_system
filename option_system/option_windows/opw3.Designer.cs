@@ -30,8 +30,9 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.kv31 = new System.Windows.Forms.TextBox();
+            this.kv32 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -52,27 +53,38 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "串口服务器端口";
             // 
-            // textBox1
+            // kv31
             // 
-            this.textBox1.Location = new System.Drawing.Point(130, 30);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 2;
+            this.kv31.Location = new System.Drawing.Point(130, 30);
+            this.kv31.Name = "kv31";
+            this.kv31.Size = new System.Drawing.Size(100, 20);
+            this.kv31.TabIndex = 2;
             // 
-            // textBox2
+            // kv32
             // 
-            this.textBox2.Location = new System.Drawing.Point(130, 71);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(70, 20);
-            this.textBox2.TabIndex = 3;
+            this.kv32.Location = new System.Drawing.Point(130, 71);
+            this.kv32.Name = "kv32";
+            this.kv32.Size = new System.Drawing.Size(70, 20);
+            this.kv32.TabIndex = 3;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(197, 227);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 29;
+            this.button1.Text = "确定";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // opw3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 262);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.kv32);
+            this.Controls.Add(this.kv31);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "opw3";
@@ -87,7 +99,8 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox kv31;
+        private System.Windows.Forms.TextBox kv32;
+        private System.Windows.Forms.Button button1;
     }
 }

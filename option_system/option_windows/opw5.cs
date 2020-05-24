@@ -25,5 +25,15 @@ namespace option_system.option_windows
             }
             base.WndProc(ref m);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void 开机启动_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

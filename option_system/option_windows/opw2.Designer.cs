@@ -30,9 +30,10 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.kv21 = new System.Windows.Forms.TextBox();
+            this.kv22 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -53,19 +54,19 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "警灯继电器监听端口";
             // 
-            // textBox1
+            // kv21
             // 
-            this.textBox1.Location = new System.Drawing.Point(188, 41);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 2;
+            this.kv21.Location = new System.Drawing.Point(188, 41);
+            this.kv21.Name = "kv21";
+            this.kv21.Size = new System.Drawing.Size(100, 20);
+            this.kv21.TabIndex = 2;
             // 
-            // textBox2
+            // kv22
             // 
-            this.textBox2.Location = new System.Drawing.Point(188, 84);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(55, 20);
-            this.textBox2.TabIndex = 3;
+            this.kv22.Location = new System.Drawing.Point(188, 84);
+            this.kv22.Name = "kv22";
+            this.kv22.Size = new System.Drawing.Size(55, 20);
+            this.kv22.TabIndex = 3;
             // 
             // label3
             // 
@@ -76,14 +77,25 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "丢失报警，警灯继电器地址";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(472, 357);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 29;
+            this.button1.Text = "确定";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // opw2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 412);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.kv22);
+            this.Controls.Add(this.kv21);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "opw2";
@@ -98,8 +110,9 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox kv21;
+        private System.Windows.Forms.TextBox kv22;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button1;
     }
 }

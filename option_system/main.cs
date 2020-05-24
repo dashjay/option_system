@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using utils.debug;
 using option_system.option_windows;
-using utils.debug;
 using utils.db;
 using System.Resources;
 namespace option_system
@@ -23,15 +22,8 @@ namespace option_system
         public main()
         {
             InitializeComponent();
-
-            PictureBox[] LEDS = { this.LED1, this.LED2, this.LED3, this.LED4, this.LED5, this.LED6, this.LED7, this.LED8, this.LED9 };
-            for (int i = 0; i < LEDS.Length; i++)
-            {
-                LEDS[i].Image = (DB.LED(int.Parse((string)LEDS[i].Tag), LEDS[i].Name.ToString()) ? Properties.Resources.green : Properties.Resources.red);
-            }
-               
         }
-
+ 
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -94,13 +86,14 @@ namespace option_system
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (DB.LED(int.Parse((string)LED1.Tag), LED1.Name))
+            string value = DB.GET(LED1.Name);
+            if (value == "" ||value == "off")
             {
-                DB.LED(int.Parse((string)LED1.Tag), LED1.Name, false);
-                LED1.Image = Properties.Resources.red;
+                DB.SET(LED1.Name, "on");
+                LED1.Image = Properties.Resources.green;
             }else{
-                 DB.LED(int.Parse((string)LED1.Tag), LED1.Name, true);
-                 LED1.Image = Properties.Resources.green;
+                DB.SET(LED1.Name, "off");
+                LED1.Image = Properties.Resources.red;
             }
         }
 
@@ -143,6 +136,26 @@ namespace option_system
             opw1 Form = new opw1();
             Form.Location = NewPos();
             Form.ShowDialog();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            PictureBox[] LEDS = { this.LED1, this.LED2, this.LED3, this.LED4, this.LED5, this.LED6, this.LED7, this.LED8, this.LED9 };
+            for (int i = 0; i < LEDS.Length; i++)
+            {
+                string value = DB.GET(LEDS[i].Name);
+                logger.ddf("value={0}", value);
+                if (value == "on")
+                {
+                    LEDS[i].Image = Properties.Resources.green;
+                    DB.SET(LEDS[i].Name, "off");
+                }
+                else
+                {
+                    LEDS[i].Image = Properties.Resources.red;
+                    DB.SET(LEDS[i].Name, "on");
+                }
+            }
         }
     }
 }

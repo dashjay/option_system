@@ -62,6 +62,12 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="components\LED.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="components\LED.Designer.cs">
+      <DependentUpon>LED.cs</DependentUpon>
+    </Compile>
     <Compile Include="option_windows\opw1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +109,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="components\LED.resx">
+      <DependentUpon>LED.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="main.resx">
       <DependentUpon>main.cs</DependentUpon>
     </EmbeddedResource>

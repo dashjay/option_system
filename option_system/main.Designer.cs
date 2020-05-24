@@ -28,22 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.LED4 = new System.Windows.Forms.PictureBox();
-            this.LED3 = new System.Windows.Forms.PictureBox();
-            this.LED2 = new System.Windows.Forms.PictureBox();
-            this.LED1 = new System.Windows.Forms.PictureBox();
             this.Label4 = new System.Windows.Forms.Label();
             this.Label3 = new System.Windows.Forms.Label();
             this.Label2 = new System.Windows.Forms.Label();
             this.Label1 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.LED9 = new System.Windows.Forms.PictureBox();
-            this.LED8 = new System.Windows.Forms.PictureBox();
-            this.LED7 = new System.Windows.Forms.PictureBox();
-            this.LED6 = new System.Windows.Forms.PictureBox();
-            this.LED5 = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -58,17 +50,27 @@
             this.op3 = new System.Windows.Forms.Button();
             this.op4 = new System.Windows.Forms.Button();
             this.op5 = new System.Windows.Forms.Button();
+            this.LED9 = new System.Windows.Forms.PictureBox();
+            this.LED8 = new System.Windows.Forms.PictureBox();
+            this.LED7 = new System.Windows.Forms.PictureBox();
+            this.LED6 = new System.Windows.Forms.PictureBox();
+            this.LED5 = new System.Windows.Forms.PictureBox();
+            this.LED4 = new System.Windows.Forms.PictureBox();
+            this.LED3 = new System.Windows.Forms.PictureBox();
+            this.LED2 = new System.Windows.Forms.PictureBox();
+            this.LED1 = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.LED4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LED3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LED2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LED1)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LED9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LED8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LED7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LED6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LED5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LED4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LED3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LED2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LED1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -88,79 +90,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "设备状态";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
-            // 
-            // LED4
-            // 
-            this.LED4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.LED4.BackColor = System.Drawing.Color.White;
-            this.LED4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.LED4.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.LED4.Enabled = false;
-            this.LED4.Image = global::option_system.Properties.Resources.green;
-            this.LED4.Location = new System.Drawing.Point(780, 30);
-            this.LED4.Margin = new System.Windows.Forms.Padding(0);
-            this.LED4.Name = "LED4";
-            this.LED4.Size = new System.Drawing.Size(38, 38);
-            this.LED4.TabIndex = 3;
-            this.LED4.TabStop = false;
-            this.LED4.Tag = "4";
-            // 
-            // LED3
-            // 
-            this.LED3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.LED3.BackColor = System.Drawing.Color.White;
-            this.LED3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.LED3.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.LED3.Enabled = false;
-            this.LED3.Image = global::option_system.Properties.Resources.red;
-            this.LED3.Location = new System.Drawing.Point(566, 30);
-            this.LED3.Margin = new System.Windows.Forms.Padding(0);
-            this.LED3.Name = "LED3";
-            this.LED3.Size = new System.Drawing.Size(38, 38);
-            this.LED3.TabIndex = 3;
-            this.LED3.TabStop = false;
-            this.LED3.Tag = "3";
-            // 
-            // LED2
-            // 
-            this.LED2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.LED2.BackColor = System.Drawing.Color.White;
-            this.LED2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.LED2.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.LED2.Enabled = false;
-            this.LED2.Image = global::option_system.Properties.Resources.red;
-            this.LED2.Location = new System.Drawing.Point(367, 30);
-            this.LED2.Margin = new System.Windows.Forms.Padding(0);
-            this.LED2.Name = "LED2";
-            this.LED2.Size = new System.Drawing.Size(38, 38);
-            this.LED2.TabIndex = 2;
-            this.LED2.TabStop = false;
-            this.LED2.Tag = "2";
-            // 
-            // LED1
-            // 
-            this.LED1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.LED1.BackColor = System.Drawing.Color.White;
-            this.LED1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.LED1.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.LED1.Enabled = false;
-            this.LED1.Image = global::option_system.Properties.Resources.red;
-            this.LED1.Location = new System.Drawing.Point(142, 30);
-            this.LED1.Margin = new System.Windows.Forms.Padding(0);
-            this.LED1.Name = "LED1";
-            this.LED1.Size = new System.Drawing.Size(38, 38);
-            this.LED1.TabIndex = 1;
-            this.LED1.TabStop = false;
-            this.LED1.Tag = "1";
-            this.LED1.Click += new System.EventHandler(this.LED1_Click);
             // 
             // Label4
             // 
@@ -232,103 +161,13 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(510, 88);
+            this.button1.Location = new System.Drawing.Point(910, 285);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 15;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // LED9
-            // 
-            this.LED9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.LED9.BackColor = System.Drawing.Color.White;
-            this.LED9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.LED9.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.LED9.Enabled = false;
-            this.LED9.Image = global::option_system.Properties.Resources.red;
-            this.LED9.Location = new System.Drawing.Point(178, 259);
-            this.LED9.Margin = new System.Windows.Forms.Padding(0);
-            this.LED9.Name = "LED9";
-            this.LED9.Size = new System.Drawing.Size(38, 38);
-            this.LED9.TabIndex = 14;
-            this.LED9.TabStop = false;
-            this.LED9.Tag = "9";
-            // 
-            // LED8
-            // 
-            this.LED8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.LED8.BackColor = System.Drawing.Color.White;
-            this.LED8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.LED8.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.LED8.Enabled = false;
-            this.LED8.Image = global::option_system.Properties.Resources.red;
-            this.LED8.Location = new System.Drawing.Point(178, 202);
-            this.LED8.Margin = new System.Windows.Forms.Padding(0);
-            this.LED8.Name = "LED8";
-            this.LED8.Size = new System.Drawing.Size(38, 38);
-            this.LED8.TabIndex = 13;
-            this.LED8.TabStop = false;
-            this.LED8.Tag = "8";
-            // 
-            // LED7
-            // 
-            this.LED7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.LED7.BackColor = System.Drawing.Color.White;
-            this.LED7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.LED7.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.LED7.Enabled = false;
-            this.LED7.Image = global::option_system.Properties.Resources.red;
-            this.LED7.Location = new System.Drawing.Point(178, 142);
-            this.LED7.Margin = new System.Windows.Forms.Padding(0);
-            this.LED7.Name = "LED7";
-            this.LED7.Size = new System.Drawing.Size(38, 38);
-            this.LED7.TabIndex = 12;
-            this.LED7.TabStop = false;
-            this.LED7.Tag = "7";
-            // 
-            // LED6
-            // 
-            this.LED6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.LED6.BackColor = System.Drawing.Color.White;
-            this.LED6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.LED6.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.LED6.Enabled = false;
-            this.LED6.Image = global::option_system.Properties.Resources.red;
-            this.LED6.Location = new System.Drawing.Point(179, 88);
-            this.LED6.Margin = new System.Windows.Forms.Padding(0);
-            this.LED6.Name = "LED6";
-            this.LED6.Size = new System.Drawing.Size(38, 38);
-            this.LED6.TabIndex = 11;
-            this.LED6.TabStop = false;
-            this.LED6.Tag = "6";
-            // 
-            // LED5
-            // 
-            this.LED5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.LED5.BackColor = System.Drawing.Color.White;
-            this.LED5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.LED5.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.LED5.Enabled = false;
-            this.LED5.Image = global::option_system.Properties.Resources.red;
-            this.LED5.Location = new System.Drawing.Point(178, 23);
-            this.LED5.Margin = new System.Windows.Forms.Padding(0);
-            this.LED5.Name = "LED5";
-            this.LED5.Size = new System.Drawing.Size(38, 38);
-            this.LED5.TabIndex = 10;
-            this.LED5.TabStop = false;
-            this.LED5.Tag = "5";
             // 
             // label13
             // 
@@ -476,6 +315,175 @@
             this.op5.UseVisualStyleBackColor = true;
             this.op5.Click += new System.EventHandler(this.op5_Click);
             // 
+            // LED9
+            // 
+            this.LED9.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.LED9.BackColor = System.Drawing.Color.White;
+            this.LED9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LED9.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.LED9.Enabled = false;
+            this.LED9.Image = global::option_system.Properties.Resources.red;
+            this.LED9.Location = new System.Drawing.Point(178, 259);
+            this.LED9.Margin = new System.Windows.Forms.Padding(0);
+            this.LED9.Name = "LED9";
+            this.LED9.Size = new System.Drawing.Size(38, 38);
+            this.LED9.TabIndex = 14;
+            this.LED9.TabStop = false;
+            this.LED9.Tag = "9";
+            // 
+            // LED8
+            // 
+            this.LED8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.LED8.BackColor = System.Drawing.Color.White;
+            this.LED8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LED8.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.LED8.Enabled = false;
+            this.LED8.Image = global::option_system.Properties.Resources.red;
+            this.LED8.Location = new System.Drawing.Point(178, 202);
+            this.LED8.Margin = new System.Windows.Forms.Padding(0);
+            this.LED8.Name = "LED8";
+            this.LED8.Size = new System.Drawing.Size(38, 38);
+            this.LED8.TabIndex = 13;
+            this.LED8.TabStop = false;
+            this.LED8.Tag = "8";
+            // 
+            // LED7
+            // 
+            this.LED7.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.LED7.BackColor = System.Drawing.Color.White;
+            this.LED7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LED7.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.LED7.Enabled = false;
+            this.LED7.Image = global::option_system.Properties.Resources.red;
+            this.LED7.Location = new System.Drawing.Point(178, 142);
+            this.LED7.Margin = new System.Windows.Forms.Padding(0);
+            this.LED7.Name = "LED7";
+            this.LED7.Size = new System.Drawing.Size(38, 38);
+            this.LED7.TabIndex = 12;
+            this.LED7.TabStop = false;
+            this.LED7.Tag = "7";
+            // 
+            // LED6
+            // 
+            this.LED6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.LED6.BackColor = System.Drawing.Color.White;
+            this.LED6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LED6.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.LED6.Enabled = false;
+            this.LED6.Image = global::option_system.Properties.Resources.red;
+            this.LED6.Location = new System.Drawing.Point(179, 88);
+            this.LED6.Margin = new System.Windows.Forms.Padding(0);
+            this.LED6.Name = "LED6";
+            this.LED6.Size = new System.Drawing.Size(38, 38);
+            this.LED6.TabIndex = 11;
+            this.LED6.TabStop = false;
+            this.LED6.Tag = "6";
+            // 
+            // LED5
+            // 
+            this.LED5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.LED5.BackColor = System.Drawing.Color.White;
+            this.LED5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LED5.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.LED5.Enabled = false;
+            this.LED5.Image = global::option_system.Properties.Resources.red;
+            this.LED5.Location = new System.Drawing.Point(178, 23);
+            this.LED5.Margin = new System.Windows.Forms.Padding(0);
+            this.LED5.Name = "LED5";
+            this.LED5.Size = new System.Drawing.Size(38, 38);
+            this.LED5.TabIndex = 10;
+            this.LED5.TabStop = false;
+            this.LED5.Tag = "5";
+            // 
+            // LED4
+            // 
+            this.LED4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.LED4.BackColor = System.Drawing.Color.White;
+            this.LED4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LED4.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.LED4.Enabled = false;
+            this.LED4.Image = global::option_system.Properties.Resources.green;
+            this.LED4.Location = new System.Drawing.Point(780, 30);
+            this.LED4.Margin = new System.Windows.Forms.Padding(0);
+            this.LED4.Name = "LED4";
+            this.LED4.Size = new System.Drawing.Size(38, 38);
+            this.LED4.TabIndex = 3;
+            this.LED4.TabStop = false;
+            this.LED4.Tag = "4";
+            // 
+            // LED3
+            // 
+            this.LED3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.LED3.BackColor = System.Drawing.Color.White;
+            this.LED3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LED3.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.LED3.Enabled = false;
+            this.LED3.Image = global::option_system.Properties.Resources.red;
+            this.LED3.Location = new System.Drawing.Point(566, 30);
+            this.LED3.Margin = new System.Windows.Forms.Padding(0);
+            this.LED3.Name = "LED3";
+            this.LED3.Size = new System.Drawing.Size(38, 38);
+            this.LED3.TabIndex = 3;
+            this.LED3.TabStop = false;
+            this.LED3.Tag = "3";
+            // 
+            // LED2
+            // 
+            this.LED2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.LED2.BackColor = System.Drawing.Color.White;
+            this.LED2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LED2.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.LED2.Enabled = false;
+            this.LED2.Image = global::option_system.Properties.Resources.red;
+            this.LED2.Location = new System.Drawing.Point(367, 30);
+            this.LED2.Margin = new System.Windows.Forms.Padding(0);
+            this.LED2.Name = "LED2";
+            this.LED2.Size = new System.Drawing.Size(38, 38);
+            this.LED2.TabIndex = 2;
+            this.LED2.TabStop = false;
+            this.LED2.Tag = "2";
+            // 
+            // LED1
+            // 
+            this.LED1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.LED1.BackColor = System.Drawing.Color.White;
+            this.LED1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LED1.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.LED1.Enabled = false;
+            this.LED1.Image = global::option_system.Properties.Resources.red;
+            this.LED1.Location = new System.Drawing.Point(142, 30);
+            this.LED1.Margin = new System.Windows.Forms.Padding(0);
+            this.LED1.Name = "LED1";
+            this.LED1.Size = new System.Drawing.Size(38, 38);
+            this.LED1.TabIndex = 1;
+            this.LED1.TabStop = false;
+            this.LED1.Tag = "1";
+            this.LED1.Click += new System.EventHandler(this.LED1_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -495,10 +503,6 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.LED4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LED3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LED2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LED1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LED9)).EndInit();
@@ -506,6 +510,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.LED7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LED6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LED5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LED4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LED3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LED2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LED1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -542,6 +550,7 @@
         private System.Windows.Forms.Button op3;
         private System.Windows.Forms.Button op4;
         private System.Windows.Forms.Button op5;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 

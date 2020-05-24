@@ -20,5 +20,10 @@ namespace option_system.option_windows
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

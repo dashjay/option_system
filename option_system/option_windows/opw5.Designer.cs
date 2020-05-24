@@ -28,27 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.开机启动 = new System.Windows.Forms.CheckedListBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.kv51 = new System.Windows.Forms.CheckBox();
+            this.kv52 = new System.Windows.Forms.CheckBox();
+            this.kv53 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
-            // 
-            // 开机启动
-            // 
-            this.开机启动.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.开机启动.BackColor = System.Drawing.SystemColors.Control;
-            this.开机启动.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.开机启动.FormattingEnabled = true;
-            this.开机启动.Items.AddRange(new object[] {
-            "开机启动",
-            "托盘运行",
-            "报警时弹出"});
-            this.开机启动.Location = new System.Drawing.Point(37, 79);
-            this.开机启动.Margin = new System.Windows.Forms.Padding(10);
-            this.开机启动.Name = "开机启动";
-            this.开机启动.Size = new System.Drawing.Size(511, 77);
-            this.开机启动.TabIndex = 0;
             // 
             // label1
             // 
@@ -59,13 +44,56 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "选项";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(473, 324);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 29;
+            this.button1.Text = "确定";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // kv51
+            // 
+            this.kv51.AutoSize = true;
+            this.kv51.Location = new System.Drawing.Point(37, 85);
+            this.kv51.Name = "kv51";
+            this.kv51.Size = new System.Drawing.Size(74, 17);
+            this.kv51.TabIndex = 30;
+            this.kv51.Text = "开机启动";
+            this.kv51.UseVisualStyleBackColor = true;
+            // 
+            // kv52
+            // 
+            this.kv52.AutoSize = true;
+            this.kv52.Location = new System.Drawing.Point(37, 108);
+            this.kv52.Name = "kv52";
+            this.kv52.Size = new System.Drawing.Size(74, 17);
+            this.kv52.TabIndex = 31;
+            this.kv52.Text = "托盘运行";
+            this.kv52.UseVisualStyleBackColor = true;
+            // 
+            // kv53
+            // 
+            this.kv53.AutoSize = true;
+            this.kv53.Location = new System.Drawing.Point(37, 131);
+            this.kv53.Name = "kv53";
+            this.kv53.Size = new System.Drawing.Size(86, 17);
+            this.kv53.TabIndex = 32;
+            this.kv53.Text = "报警时弹出";
+            this.kv53.UseVisualStyleBackColor = true;
+            // 
             // opw5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 412);
+            this.Controls.Add(this.kv53);
+            this.Controls.Add(this.kv52);
+            this.Controls.Add(this.kv51);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.开机启动);
             this.Name = "opw5";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "软件配置";
@@ -77,7 +105,10 @@
 
         #endregion
 
-        private System.Windows.Forms.CheckedListBox 开机启动;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.CheckBox kv51;
+        private System.Windows.Forms.CheckBox kv52;
+        private System.Windows.Forms.CheckBox kv53;
     }
 }

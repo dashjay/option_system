@@ -32,31 +32,32 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.kv11 = new System.Windows.Forms.TextBox();
+            this.kv13 = new System.Windows.Forms.TextBox();
+            this.kv12 = new System.Windows.Forms.TextBox();
+            this.kv14 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.kcv8v = new System.Windows.Forms.TextBox();
+            this.kcv7v = new System.Windows.Forms.TextBox();
+            this.kcv6v = new System.Windows.Forms.TextBox();
+            this.kcv5v = new System.Windows.Forms.TextBox();
+            this.kcv4v = new System.Windows.Forms.TextBox();
+            this.kcv3v = new System.Windows.Forms.TextBox();
+            this.kcv2v = new System.Windows.Forms.TextBox();
+            this.kcv1v = new System.Windows.Forms.TextBox();
+            this.kv16 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.kv15 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.kcv8 = new System.Windows.Forms.CheckBox();
+            this.kcv7 = new System.Windows.Forms.CheckBox();
+            this.kcv6 = new System.Windows.Forms.CheckBox();
+            this.kcv5 = new System.Windows.Forms.CheckBox();
+            this.kcv4 = new System.Windows.Forms.CheckBox();
+            this.kcv3 = new System.Windows.Forms.CheckBox();
+            this.kcv2 = new System.Windows.Forms.CheckBox();
+            this.kcv1 = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -96,157 +97,135 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Server监听端口：";
             // 
-            // textBox1
+            // kv11
             // 
-            this.textBox1.Location = new System.Drawing.Point(115, 29);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 4;
+            this.kv11.Location = new System.Drawing.Point(115, 29);
+            this.kv11.Name = "kv11";
+            this.kv11.Size = new System.Drawing.Size(100, 20);
+            this.kv11.TabIndex = 4;
             // 
-            // textBox2
+            // kv13
             // 
-            this.textBox2.Location = new System.Drawing.Point(115, 98);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 5;
+            this.kv13.Location = new System.Drawing.Point(115, 98);
+            this.kv13.Name = "kv13";
+            this.kv13.Size = new System.Drawing.Size(100, 20);
+            this.kv13.TabIndex = 5;
             // 
-            // textBox3
+            // kv12
             // 
-            this.textBox3.Location = new System.Drawing.Point(115, 65);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 6;
+            this.kv12.Location = new System.Drawing.Point(115, 65);
+            this.kv12.Name = "kv12";
+            this.kv12.Size = new System.Drawing.Size(100, 20);
+            this.kv12.TabIndex = 6;
             // 
-            // textBox4
+            // kv14
             // 
-            this.textBox4.Location = new System.Drawing.Point(115, 133);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 7;
+            this.kv14.Location = new System.Drawing.Point(115, 133);
+            this.kv14.Name = "kv14";
+            this.kv14.Size = new System.Drawing.Size(100, 20);
+            this.kv14.TabIndex = 7;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox13);
-            this.groupBox1.Controls.Add(this.textBox14);
-            this.groupBox1.Controls.Add(this.textBox11);
-            this.groupBox1.Controls.Add(this.textBox12);
-            this.groupBox1.Controls.Add(this.textBox9);
-            this.groupBox1.Controls.Add(this.textBox10);
-            this.groupBox1.Controls.Add(this.textBox8);
-            this.groupBox1.Controls.Add(this.textBox7);
-            this.groupBox1.Controls.Add(this.textBox6);
+            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.kcv8v);
+            this.groupBox1.Controls.Add(this.kcv7v);
+            this.groupBox1.Controls.Add(this.kcv6v);
+            this.groupBox1.Controls.Add(this.kcv5v);
+            this.groupBox1.Controls.Add(this.kcv4v);
+            this.groupBox1.Controls.Add(this.kcv3v);
+            this.groupBox1.Controls.Add(this.kcv2v);
+            this.groupBox1.Controls.Add(this.kcv1v);
+            this.groupBox1.Controls.Add(this.kv16);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.textBox5);
+            this.groupBox1.Controls.Add(this.kv15);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.checkBox8);
-            this.groupBox1.Controls.Add(this.checkBox7);
-            this.groupBox1.Controls.Add(this.checkBox6);
-            this.groupBox1.Controls.Add(this.checkBox5);
-            this.groupBox1.Controls.Add(this.checkBox4);
-            this.groupBox1.Controls.Add(this.checkBox3);
-            this.groupBox1.Controls.Add(this.checkBox2);
-            this.groupBox1.Controls.Add(this.checkBox1);
+            this.groupBox1.Controls.Add(this.kcv8);
+            this.groupBox1.Controls.Add(this.kcv7);
+            this.groupBox1.Controls.Add(this.kcv6);
+            this.groupBox1.Controls.Add(this.kcv5);
+            this.groupBox1.Controls.Add(this.kcv4);
+            this.groupBox1.Controls.Add(this.kcv3);
+            this.groupBox1.Controls.Add(this.kcv2);
+            this.groupBox1.Controls.Add(this.kcv1);
             this.groupBox1.Location = new System.Drawing.Point(15, 159);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(507, 406);
             this.groupBox1.TabIndex = 8;
             this.groupBox1.TabStop = false;
             // 
-            // checkBox1
+            // button1
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(30, 39);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(128, 17);
-            this.checkBox1.TabIndex = 10;
-            this.checkBox1.Text = "无线车辆探头V1 ID:";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.button1.Location = new System.Drawing.Point(405, 364);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 28;
+            this.button1.Text = "确定";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // checkBox2
+            // kcv8v
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(30, 75);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(128, 17);
-            this.checkBox2.TabIndex = 11;
-            this.checkBox2.Text = "无线车辆探头V2 ID:";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.kcv8v.Location = new System.Drawing.Point(164, 277);
+            this.kcv8v.Name = "kcv8v";
+            this.kcv8v.Size = new System.Drawing.Size(108, 20);
+            this.kcv8v.TabIndex = 27;
             // 
-            // checkBox3
+            // kcv7v
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(30, 110);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(129, 17);
-            this.checkBox3.TabIndex = 12;
-            this.checkBox3.Text = "无线地面探头G1 ID:";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.kcv7v.Location = new System.Drawing.Point(164, 241);
+            this.kcv7v.Name = "kcv7v";
+            this.kcv7v.Size = new System.Drawing.Size(108, 20);
+            this.kcv7v.TabIndex = 26;
             // 
-            // checkBox4
+            // kcv6v
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(30, 143);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(129, 17);
-            this.checkBox4.TabIndex = 13;
-            this.checkBox4.Text = "无线地面探头G2 ID:";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.kcv6v.Location = new System.Drawing.Point(164, 213);
+            this.kcv6v.Name = "kcv6v";
+            this.kcv6v.Size = new System.Drawing.Size(108, 20);
+            this.kcv6v.TabIndex = 25;
             // 
-            // checkBox5
+            // kcv5v
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(30, 177);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(129, 17);
-            this.checkBox5.TabIndex = 14;
-            this.checkBox5.Text = "无线地面探头G3 ID:";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.kcv5v.Location = new System.Drawing.Point(164, 177);
+            this.kcv5v.Name = "kcv5v";
+            this.kcv5v.Size = new System.Drawing.Size(108, 20);
+            this.kcv5v.TabIndex = 24;
             // 
-            // checkBox6
+            // kcv4v
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(29, 211);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(97, 17);
-            this.checkBox6.TabIndex = 15;
-            this.checkBox6.Text = "备用探头1 ID:";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.kcv4v.Location = new System.Drawing.Point(164, 146);
+            this.kcv4v.Name = "kcv4v";
+            this.kcv4v.Size = new System.Drawing.Size(108, 20);
+            this.kcv4v.TabIndex = 23;
             // 
-            // checkBox7
+            // kcv3v
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(30, 244);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(97, 17);
-            this.checkBox7.TabIndex = 16;
-            this.checkBox7.Text = "备用探头2 ID:";
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.kcv3v.Location = new System.Drawing.Point(164, 110);
+            this.kcv3v.Name = "kcv3v";
+            this.kcv3v.Size = new System.Drawing.Size(108, 20);
+            this.kcv3v.TabIndex = 22;
             // 
-            // checkBox8
+            // kcv2v
             // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(29, 277);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(97, 17);
-            this.checkBox8.TabIndex = 17;
-            this.checkBox8.Text = "备用探头3 ID:";
-            this.checkBox8.UseVisualStyleBackColor = true;
+            this.kcv2v.Location = new System.Drawing.Point(164, 72);
+            this.kcv2v.Name = "kcv2v";
+            this.kcv2v.Size = new System.Drawing.Size(108, 20);
+            this.kcv2v.TabIndex = 21;
             // 
-            // label5
+            // kcv1v
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(27, 331);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(127, 13);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "自动关闭时间（秒）：";
+            this.kcv1v.Location = new System.Drawing.Point(164, 36);
+            this.kcv1v.Name = "kcv1v";
+            this.kcv1v.Size = new System.Drawing.Size(108, 20);
+            this.kcv1v.TabIndex = 20;
             // 
-            // textBox5
+            // kv16
             // 
-            this.textBox5.Location = new System.Drawing.Point(184, 328);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(108, 20);
-            this.textBox5.TabIndex = 9;
+            this.kv16.Location = new System.Drawing.Point(184, 361);
+            this.kv16.Name = "kv16";
+            this.kv16.Size = new System.Drawing.Size(108, 20);
+            this.kv16.TabIndex = 19;
             // 
             // label6
             // 
@@ -257,68 +236,101 @@
             this.label6.TabIndex = 18;
             this.label6.Text = "自动检测时间间隔（秒）：";
             // 
-            // textBox6
+            // kv15
             // 
-            this.textBox6.Location = new System.Drawing.Point(184, 361);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(108, 20);
-            this.textBox6.TabIndex = 19;
+            this.kv15.Location = new System.Drawing.Point(184, 328);
+            this.kv15.Name = "kv15";
+            this.kv15.Size = new System.Drawing.Size(108, 20);
+            this.kv15.TabIndex = 9;
             // 
-            // textBox7
+            // label5
             // 
-            this.textBox7.Location = new System.Drawing.Point(164, 36);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(108, 20);
-            this.textBox7.TabIndex = 20;
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(27, 331);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(127, 13);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "自动关闭时间（秒）：";
             // 
-            // textBox8
+            // kcv8
             // 
-            this.textBox8.Location = new System.Drawing.Point(164, 72);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(108, 20);
-            this.textBox8.TabIndex = 21;
+            this.kcv8.AutoSize = true;
+            this.kcv8.Location = new System.Drawing.Point(29, 277);
+            this.kcv8.Name = "kcv8";
+            this.kcv8.Size = new System.Drawing.Size(97, 17);
+            this.kcv8.TabIndex = 17;
+            this.kcv8.Text = "备用探头3 ID:";
+            this.kcv8.UseVisualStyleBackColor = true;
             // 
-            // textBox9
+            // kcv7
             // 
-            this.textBox9.Location = new System.Drawing.Point(164, 146);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(108, 20);
-            this.textBox9.TabIndex = 23;
+            this.kcv7.AutoSize = true;
+            this.kcv7.Location = new System.Drawing.Point(30, 244);
+            this.kcv7.Name = "kcv7";
+            this.kcv7.Size = new System.Drawing.Size(97, 17);
+            this.kcv7.TabIndex = 16;
+            this.kcv7.Text = "备用探头2 ID:";
+            this.kcv7.UseVisualStyleBackColor = true;
             // 
-            // textBox10
+            // kcv6
             // 
-            this.textBox10.Location = new System.Drawing.Point(164, 110);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(108, 20);
-            this.textBox10.TabIndex = 22;
+            this.kcv6.AutoSize = true;
+            this.kcv6.Location = new System.Drawing.Point(29, 211);
+            this.kcv6.Name = "kcv6";
+            this.kcv6.Size = new System.Drawing.Size(97, 17);
+            this.kcv6.TabIndex = 15;
+            this.kcv6.Text = "备用探头1 ID:";
+            this.kcv6.UseVisualStyleBackColor = true;
             // 
-            // textBox11
+            // kcv5
             // 
-            this.textBox11.Location = new System.Drawing.Point(164, 213);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(108, 20);
-            this.textBox11.TabIndex = 25;
+            this.kcv5.AutoSize = true;
+            this.kcv5.Location = new System.Drawing.Point(30, 177);
+            this.kcv5.Name = "kcv5";
+            this.kcv5.Size = new System.Drawing.Size(129, 17);
+            this.kcv5.TabIndex = 14;
+            this.kcv5.Text = "无线地面探头G3 ID:";
+            this.kcv5.UseVisualStyleBackColor = true;
             // 
-            // textBox12
+            // kcv4
             // 
-            this.textBox12.Location = new System.Drawing.Point(164, 177);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(108, 20);
-            this.textBox12.TabIndex = 24;
+            this.kcv4.AutoSize = true;
+            this.kcv4.Location = new System.Drawing.Point(30, 143);
+            this.kcv4.Name = "kcv4";
+            this.kcv4.Size = new System.Drawing.Size(129, 17);
+            this.kcv4.TabIndex = 13;
+            this.kcv4.Text = "无线地面探头G2 ID:";
+            this.kcv4.UseVisualStyleBackColor = true;
             // 
-            // textBox13
+            // kcv3
             // 
-            this.textBox13.Location = new System.Drawing.Point(164, 277);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(108, 20);
-            this.textBox13.TabIndex = 27;
+            this.kcv3.AutoSize = true;
+            this.kcv3.Location = new System.Drawing.Point(30, 110);
+            this.kcv3.Name = "kcv3";
+            this.kcv3.Size = new System.Drawing.Size(129, 17);
+            this.kcv3.TabIndex = 12;
+            this.kcv3.Text = "无线地面探头G1 ID:";
+            this.kcv3.UseVisualStyleBackColor = true;
             // 
-            // textBox14
+            // kcv2
             // 
-            this.textBox14.Location = new System.Drawing.Point(164, 241);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(108, 20);
-            this.textBox14.TabIndex = 26;
+            this.kcv2.AutoSize = true;
+            this.kcv2.Location = new System.Drawing.Point(30, 75);
+            this.kcv2.Name = "kcv2";
+            this.kcv2.Size = new System.Drawing.Size(128, 17);
+            this.kcv2.TabIndex = 11;
+            this.kcv2.Text = "无线车辆探头V2 ID:";
+            this.kcv2.UseVisualStyleBackColor = true;
+            // 
+            // kcv1
+            // 
+            this.kcv1.AutoSize = true;
+            this.kcv1.Location = new System.Drawing.Point(30, 39);
+            this.kcv1.Name = "kcv1";
+            this.kcv1.Size = new System.Drawing.Size(128, 17);
+            this.kcv1.TabIndex = 10;
+            this.kcv1.Text = "无线车辆探头V1 ID:";
+            this.kcv1.UseVisualStyleBackColor = true;
             // 
             // opw1
             // 
@@ -326,10 +338,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(534, 577);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.kv14);
+            this.Controls.Add(this.kv12);
+            this.Controls.Add(this.kv13);
+            this.Controls.Add(this.kv11);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -351,30 +363,31 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox kv11;
+        private System.Windows.Forms.TextBox kv13;
+        private System.Windows.Forms.TextBox kv12;
+        private System.Windows.Forms.TextBox kv14;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox kcv8v;
+        private System.Windows.Forms.TextBox kcv7v;
+        private System.Windows.Forms.TextBox kcv6v;
+        private System.Windows.Forms.TextBox kcv5v;
+        private System.Windows.Forms.TextBox kcv4v;
+        private System.Windows.Forms.TextBox kcv3v;
+        private System.Windows.Forms.TextBox kcv2v;
+        private System.Windows.Forms.TextBox kcv1v;
+        private System.Windows.Forms.TextBox kv16;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox kv15;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.CheckBox checkBox8;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox kcv8;
+        private System.Windows.Forms.CheckBox kcv7;
+        private System.Windows.Forms.CheckBox kcv6;
+        private System.Windows.Forms.CheckBox kcv5;
+        private System.Windows.Forms.CheckBox kcv4;
+        private System.Windows.Forms.CheckBox kcv3;
+        private System.Windows.Forms.CheckBox kcv2;
+        private System.Windows.Forms.CheckBox kcv1;
+        private System.Windows.Forms.Button button1;
     }
 }
