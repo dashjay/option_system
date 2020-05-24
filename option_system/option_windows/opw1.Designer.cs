@@ -349,7 +349,6 @@
             this.Name = "opw1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "电子标签配置";
-            this.Load += new System.EventHandler(this.opw1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

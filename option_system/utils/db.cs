@@ -25,18 +25,28 @@ namespace utils.db
         {
             if (File.Exists(dbPath))
             {
-                if ((int)MessageBox.Show("数据库已存在，是否重置？","提示", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation) != 1)
+                DialogResult result = MessageBox.Show("数据库已存在，是否重置？", "提示", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
+                if (result==DialogResult.OK)
                 {
+                    logger.dd("delete");
                     File.Delete(dbPath);
                     this.conn = new SQLiteConnection("Data Source =" + dbPath);
                     conn.Open();
                     this.migrate();
                 }
+                else
+                {
+                    logger.dd("nodelete");
+                    this.conn = new SQLiteConnection("Data Source =" + dbPath);
+                    conn.Open();
+                }
+            }
+            else
+            {
                 this.conn = new SQLiteConnection("Data Source =" + dbPath);
                 conn.Open();
-            }
-           
-            
+                this.migrate();
+            }        
         }
 
         public void migrate()
@@ -47,7 +57,7 @@ namespace utils.db
                                 "kv31", "kv32",
                                 "kv41","kv42","kv43","kv44","kv45","kv46", "kv47", "kv48",
                                 "kv51", "kv52", "kv53",
-                                "LED1","LED2","LED3","LED4","LED5","LED6","LED8","LED9"};
+                                "LED1","LED2","LED3","LED4","LED5","LED6","LED7","LED8","LED9"};
 
     
 
@@ -78,14 +88,14 @@ namespace utils.db
        
             // 尝试从数据库中获取
             string sql =string.Format( "SELECT * FROM KV WHERE name = '{0}'", name);
-            logger.dd(sql);
+            //logger.dd(sql);
             SQLiteCommand cmdQ = new SQLiteCommand(sql,this.conn);
             SQLiteDataReader reader = cmdQ.ExecuteReader();
             if (reader.Read())
             {
                 string Name = reader.GetString(0);
                 string Value = reader.GetString(1);
-                logger.ddf(" name={0}, value={1}",Name,Value);
+               // logger.ddf(" name={0}, value={1}",Name,Value);
                 return Value;
             }
             return "";
@@ -95,7 +105,7 @@ namespace utils.db
         {
             // 尝试从数据库中获取
             string sql = string.Format("UPDATE KV SET value = '{0}' WHERE name = '{1}'", value, name);
-            logger.dd(sql);
+            //logger.dd(sql);
             SQLiteCommand cmdQ = new SQLiteCommand(sql, this.conn);
             cmdQ.ExecuteNonQuery();
         }
@@ -105,7 +115,7 @@ namespace utils.db
             KCVVs temp = new KCVVs();
             temp.KC = new Dictionary<string, bool>();
             temp.KV = new Dictionary<string, string>();
-            string sql = "SELECT * FROM KCVV";
+            string sql = "SELECT * FROM KCV";
             SQLiteCommand cmdQ = new SQLiteCommand(sql, this.conn);
             SQLiteDataReader reader =  cmdQ.ExecuteReader();
 
@@ -118,6 +128,23 @@ namespace utils.db
                 temp.KC[Name] = Open;
             }
             return temp;
+        }
+        public void SETKCV(KCVVs input){
+            using (SQLiteTransaction tr = conn.BeginTransaction())
+            {
+                SQLiteCommand cmd = new SQLiteCommand(conn);
+                cmd.CommandText = "UPDATE KCV SET value = @value, open = @open where name = @name";
+                for (int i = 1; i <= 8; i++)
+                {
+                    string key = "kcv"+i.ToString();
+                    cmd.Parameters.AddWithValue("@value", input.KV[key]);
+                    cmd.Parameters.AddWithValue("@open", input.KC[key]);
+                    cmd.Parameters.AddWithValue("@name", key);
+                    cmd.ExecuteNonQuery();
+                }
+                tr.Commit();
+            }
+           
         }
     }
 }

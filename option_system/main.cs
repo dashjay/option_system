@@ -11,6 +11,9 @@ using utils.debug;
 using option_system.option_windows;
 using utils.db;
 using System.Resources;
+using System.Net.Sockets;      
+using System.Net;
+using System.Threading;
 namespace option_system
 {
     public partial class main : Form
@@ -19,6 +22,12 @@ namespace option_system
         public Image Green;
         public Image Red;
         public debugger logger = new debugger();
+        
+        // tcp client 
+        private TcpClient MainTcpClient;
+        private NetworkStream MainNetWorkSteam;
+        private Thread ServeThread;
+
         public main()
         {
             InitializeComponent();
@@ -26,80 +35,11 @@ namespace option_system
  
         private void Form1_Load(object sender, EventArgs e)
         {
-
+           
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LED1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            string value = DB.GET(LED1.Name);
-            if (value == "" ||value == "off")
-            {
-                DB.SET(LED1.Name, "on");
-                LED1.Image = Properties.Resources.green;
-            }else{
-                DB.SET(LED1.Name, "off");
-                LED1.Image = Properties.Resources.red;
-            }
-        }
-
         private void button4_Click(object sender, EventArgs e)
         {
-            opw4 Form = new opw4();
+            opw4 Form = new opw4(DB);
             Form.Location = NewPos();
             Form.ShowDialog();
         }
@@ -112,28 +52,28 @@ namespace option_system
 
         private void op5_Click(object sender, EventArgs e)
         {
-            opw5 Form = new opw5();
+            opw5 Form = new opw5(DB);
             Form.Location = NewPos();
             Form.ShowDialog();
         }
 
         private void op3_Click(object sender, EventArgs e)
         {
-            opw3 Form = new opw3();
+            opw3 Form = new opw3(DB);
             Form.Location = NewPos();
             Form.ShowDialog();
         }
 
         private void op2_Click(object sender, EventArgs e)
         {
-            opw2 Form = new opw2();
+            opw2 Form = new opw2(DB);
             Form.Location = NewPos();
             Form.ShowDialog();
         }
 
         private void op1_Click(object sender, EventArgs e)
         {
-            opw1 Form = new opw1();
+            opw1 Form = new opw1(DB);
             Form.Location = NewPos();
             Form.ShowDialog();
         }
@@ -144,7 +84,6 @@ namespace option_system
             for (int i = 0; i < LEDS.Length; i++)
             {
                 string value = DB.GET(LEDS[i].Name);
-                logger.ddf("value={0}", value);
                 if (value == "on")
                 {
                     LEDS[i].Image = Properties.Resources.green;
@@ -155,6 +94,32 @@ namespace option_system
                     LEDS[i].Image = Properties.Resources.red;
                     DB.SET(LEDS[i].Name, "on");
                 }
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            IPAddress IP = IPAddress.Parse(ip.Text);
+            int Port = Convert.ToInt32(port.Text);
+            IPEndPoint Addr = new IPEndPoint(IP, Port);
+            MainTcpClient = new TcpClient();
+            logger.dd("prepare for connection.");
+            try
+            {
+                MainTcpClient.Connect(Addr);
+                if (MainTcpClient != null)
+                {
+                    MessageBox.Show("服务器连接成功");
+                    MainNetWorkSteam = MainTcpClient.GetStream();
+                }
+                else
+                {
+                    MessageBox.Show("connect fail");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
     }
